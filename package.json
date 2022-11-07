@@ -1,22 +1,17 @@
 {
-  "name": "Ecommerce Design With Tailwind CSS",
+  "name": "ecommerce-design-with-tailwind-css",
   "version": "1.0.0",
-  "description": "",
+  "description": "Ecommerce design with tailwind css",
   "main": "dist/index.html",
   "scripts": {
     "dev": "npx tailwindcss -i ./src/tailwind.css -o ./dist/styles.css --watch"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mistersakil/tailwind-css-practice.git"
-  },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "Ecommerce design",
+    "tailwind css"
+  ],
+  "author": "sakil.diu.cse@gmail.com",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/mistersakil/tailwind-css-practice/issues"
-  },
-  "homepage": "https://github.com/mistersakil/tailwind-css-practice#readme",
   "devDependencies": {
     "tailwindcss": "^3.2.1"
   },

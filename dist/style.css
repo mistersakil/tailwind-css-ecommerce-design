@@ -11135,8 +11135,40 @@ video {
   font-style: italic;
 }
 
+.hover\:border-brandColor\/80:hover{
+  border-color: rgb(236 29 37 / 0.8);
+}
+
+.hover\:border-brandColor\/70:hover{
+  border-color: rgb(236 29 37 / 0.7);
+}
+
 .hover\:bg-transparent:hover{
   background-color: transparent;
+}
+
+.hover\:bg-brandColor\/30:hover{
+  background-color: rgb(236 29 37 / 0.3);
+}
+
+.hover\:bg-brandColor\/80:hover{
+  background-color: rgb(236 29 37 / 0.8);
+}
+
+.hover\:bg-brandColor\/10:hover{
+  background-color: rgb(236 29 37 / 0.1);
+}
+
+.hover\:bg-brandColor\/90:hover{
+  background-color: rgb(236 29 37 / 0.9);
+}
+
+.hover\:bg-brandColor\/50:hover{
+  background-color: rgb(236 29 37 / 0.5);
+}
+
+.hover\:bg-brandColor\/70:hover{
+  background-color: rgb(236 29 37 / 0.7);
 }
 
 .hover\:text-brandColor:hover{

@@ -11,7 +11,7 @@
     <!-- header part  -->
     <header
       id="header"
-      class="container m-auto h-16 p-2 bg-green-200 flex items-center justify-between"
+      class="container m-auto h-16 p-2 flex items-center justify-between"
     >
       <a
         href="./"
@@ -35,28 +35,32 @@
           class="w-full h-full border border-brandColor hover:border-brandColor/80 border-r-0 rounded-lg pl-10 text-lg focus:outline-none placeholder:italic placeholder:capitalize placeholder:text-sm"
         />
         <button
-          class="absolute right-0 top-0 px-4 capitalize bg-brandColor h-full text-white text-lg rounded-lg border border-brandColor hover:border-brandColor/80 hover:bg-brandColor/80 transition"
+          class="absolute right-0 top-0 px-4 capitalize bg-brandColor h-full text-white text-lg rounded-r-lg border border-brandColor hover:border-brandColor/80 hover:bg-brandColor/80 transition"
         >
           search
         </button>
       </div>
       <!-- /#searchBox -->
-      <div id="headerIcons">
-        <div>
+      <nav
+        id="headerIcons"
+        class="flex h-full items-center content-between space-x-4"
+      >
+        <a>
           <i class="fa-solid fa-cart-shopping"></i>
           <span>cart</span>
           <span>1</span>
-        </div>
-        <div>
+        </a>
+        <a>
           <i class="fa-regular fa-heart"></i>
           <span>wish list</span>
           <span>2</span>
-        </div>
-        <div>
+        </a>
+        <a>
           <i class="fa-solid fa-user-large" title="Account"></i>
           <span>account</span>
-        </div>
-      </div>
+        </a>
+      </nav>
+      <!-- /#headerIcons -->
     </header>
     <!-- end: header part  -->
   </body>

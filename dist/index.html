@@ -3,11 +3,61 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>Ecommerce website using tailwind css</title>
     <link href="./style.css" rel="stylesheet" />
   </head>
   <body>
     <!-- header part  -->
-    <header></header>
+    <header
+      id="header"
+      class="container m-auto h-16 p-2 flex items-center justify-between"
+    >
+      <a
+        href="./"
+        id="logo"
+        class="w-36 h-full flex items-center justify-center overflow-hidden"
+      >
+        <img
+          class="w-full h-full object-contain"
+          src="./images/logo.png"
+          alt="logo"
+        />
+      </a>
+      <!-- /#logo -->
+      <div id="searchBox" class="w-full h-full max-w-md relative font-roboto">
+        <span
+          class="fa-solid fa-search absolute top-3 left-3 text-lg text-gray-400"
+        ></span>
+        <input
+          type="text"
+          placeholder="search..."
+          class="w-full h-full border border-brandColor border-r-0 rounded-lg pl-10 text-lg focus:outline-none"
+        />
+        <button
+          class="absolute right-0 top-0 px-4 capitalize bg-brandColor h-full text-white text-lg rounded-r-lg border border-brandColor border-l-0 hover:bg-transparent hover:text-brandColor transition"
+        >
+          search
+        </button>
+      </div>
+      <!-- /#searchBox -->
+      <div id="headerIcons">
+        <div>
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span>cart</span>
+          <span>1</span>
+        </div>
+        <div>
+          <i class="fa-regular fa-heart"></i>
+          <span>wish list</span>
+          <span>2</span>
+        </div>
+        <div>
+          <i class="fa-solid fa-user-large" title="Account"></i>
+          <span>account</span>
+        </div>
+      </div>
+    </header>
     <!-- end: header part  -->
   </body>
 </html>

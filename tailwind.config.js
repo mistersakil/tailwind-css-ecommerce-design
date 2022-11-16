@@ -15,7 +15,7 @@ module.exports = {
         roboto: "'Roboto', sans-serif",
       },
       colors: {
-        brandColor: "#fd3d57",
+        brandColor: "#EC1D25",
       },
     },
   },

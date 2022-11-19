@@ -7,11 +7,12 @@
     <title>Ecommerce website using tailwind css</title>
     <link href="./style.css" rel="stylesheet" />
   </head>
+
   <body>
     <!-- header part  -->
     <header
       id="header"
-      class="container m-auto h-16 p-2 flex items-center justify-between"
+      class="container m-auto md:h-16 xs:h-auto p-2 flex md:flex-row xs:flex-col xs:space-y-5 md:space-y-0 md:items-center xs:items-center md:justify-between xs:justify-center"
     >
       <a
         href="./"
@@ -25,7 +26,10 @@
         />
       </a>
       <!-- /#logo -->
-      <div id="searchBox" class="w-full h-full max-w-md relative font-roboto">
+      <div
+        id="searchBox"
+        class="w-full md:h-full xs:h-14 sm:max-w-sm md:max-w-sm lg:max-w-lg relative font-roboto"
+      >
         <span
           class="fa-solid fa-search absolute top-3 left-3 text-lg text-gray-400 italic"
         ></span>
@@ -43,27 +47,39 @@
       <!-- /#searchBox -->
       <nav
         id="headerIcons"
-        class="flex h-full items-center content-between space-x-4"
+        class="flex h-full items-center content-between space-x-10 md:space-x-3 xl:space-x-10 2xl:space-x-14"
       >
-        <a href="./" class="relative flex flex-col items-center content-center">
-          <i class="fa-solid fa-cart-shopping text-xl text-gray-500"></i>
-          <span class="text-gray-600 capitalize text-sm font-semibold"
-            >cart</span
-          >
+        <a href="./" class="flex flex-col items-center content-between">
           <span
-            class="absolute -top-1 right-0 w-5 h-5 bg-brandColor rounded-full flex items-center justify-center"
-            >1</span
-        </a>
-        <a href="./" class="relative flex flex-col items-center content-center">
-          <i class="fa-solid fa-heart text-2xl text-gray-500"></i>
-          <span class="text-gray-600 capitalize text-sm font-semibold"
-            >wish list</span
+            class="text-gray-600 capitalize text-sm font-semibold relative w-7 h-7"
           >
+            <i class="fa-solid fa-cart-shopping text-xl text-gray-500"></i>
+            <em
+              class="not-italic absolute -top-1 -right-3 w-5 h-5 bg-brandColor rounded-full flex items-center justify-center text-white"
+            >
+              1
+            </em>
+          </span>
+          <span class="text-gray-600 capitalize text-sm font-semibold">
+            Cart
+          </span>
+        </a>
+        <a href="./" class="flex flex-col items-center content-between">
           <span
-            class="absolute -top-1 right-0 w-5 h-5 bg-brandColor rounded-full flex items-center justify-center text-white"
-            >1</span
+            class="text-gray-600 capitalize text-sm font-semibold relative w-7 h-7"
           >
+            <i class="fa-solid fa-heart text-xl text-gray-500"></i>
+            <em
+              class="not-italic absolute -top-1 -right-3 w-5 h-5 bg-brandColor rounded-full flex items-center justify-center text-white"
+            >
+              5
+            </em>
+          </span>
+          <span class="text-gray-600 capitalize text-sm font-semibold">
+            wish list
+          </span>
         </a>
+
         <a href="./" class="relative flex flex-col items-center content-center">
           <i class="fa-solid fa-user text-xl text-gray-500" title="Account"></i>
           <span class="text-gray-600 capitalize text-sm font-semibold"

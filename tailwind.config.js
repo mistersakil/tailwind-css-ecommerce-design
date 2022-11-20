@@ -18,6 +18,14 @@ module.exports = {
       colors: {
         brandColor: "#EC1D25",
       },
+      spacing: {
+        100: "25rem",
+        104: "26rem",
+        108: "27rem",
+        112: "28rem",
+        116: "29rem",
+        120: "30rem",
+      },
     },
   },
   plugins: [],

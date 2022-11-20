@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="./dist/favicon.ico" type="image/x-icon" />
     <title>Ecommerce website using tailwind css</title>
     <link href="./dist/style.css" rel="stylesheet" />
   </head>
@@ -12,7 +12,7 @@
     <!-- ########## header part ##########  -->
     <header
       id="header"
-      class="container m-auto md:h-20 xs:h-auto py-4 flex md:flex-row xs:flex-col xs:space-y-5 md:space-y-0 md:items-center xs:items-center md:justify-between xs:justify-center"
+      class="container m-auto md:h-20 xs:h-auto py-4 flex md:flex-row xs:flex-col xs:space-y-5 md:space-y-0 md:items-center xs:items-center md:justify-between xs:justify-center font-roboto"
     >
       <a
         href="./"
@@ -28,7 +28,7 @@
       <!-- /#logo -->
       <div
         id="searchBox"
-        class="w-full md:h-full xs:h-14 sm:max-w-sm md:max-w-sm lg:max-w-lg relative font-roboto"
+        class="w-full md:h-full xs:h-14 sm:max-w-sm md:max-w-sm lg:max-w-lg relative"
       >
         <span
           class="fa-solid fa-search absolute top-3 left-3 text-lg text-gray-400 italic"
@@ -101,23 +101,76 @@
     </header>
     <!-- ########## end: header part  ########## -->
     <!-- navbar part  -->
-    <section id="navbar" class="bg-gray-800 h-14 overflow-hidden">
+    <section id="navbar" class="bg-gray-800">
       <main
         id="navbarContainer"
-        class="bg-green-000 md:container m-auto h-full flex flex-row items-center text-white font-roboto capitalize text-base font-normal space-x-10"
+        class="bg-green-000 md:container m-auto h-full flex flex-row items-center space-x-10 text-white font-roboto capitalize text-base font-normal"
       >
-        <a
-          href="#"
-          id="categoryList"
-          class="basis-1/5 bg-brandColor h-full flex flex-row items-center justify-center space-x-2"
+        <aside
+          id="categoryListContainer"
+          class="bg-brandColor flex flex-row items-center justify-center relative py-3 px-10 group"
         >
-          <i class="fa-solid fa-bars text-xl"></i>
+          <i class="fa-solid fa-bars text-lg mr-2"></i>
           <span>all categories</span>
-        </a>
-        <!-- /#categoryList  -->
+          <nav
+            id="categoryList"
+            class="bg-gray-200 shadow-sm py-3 text-gray-600 absolute top-full left-0 flex flex-col w-full divide-y divide-gray-400 divide-dashed opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-100"
+          >
+            <a
+              href="#"
+              class="hover:bg-gray-300 tranistion duration-500 tra px-10 py-3"
+            >
+              <i class="fa-solid fa-couch text-base mr-2"></i>
+              sofa
+            </a>
+            <a
+              href="#"
+              class="hover:bg-gray-300 tranistion duration-500 tra px-10 py-3"
+            >
+              <i class="fa-solid fa-bed text-base mr-2"></i>
+              bedroom
+            </a>
+            <a
+              href="#"
+              class="hover:bg-gray-300 tranistion duration-500 tra px-10 py-3"
+            >
+              <i class="fa-solid fa-shower text-base mr-2"></i>
+              shower
+            </a>
+            <a
+              href="#"
+              class="hover:bg-gray-300 tranistion duration-500 tra px-10 py-3"
+            >
+              <i class="fa-solid fa-chair text-base mr-2"></i>
+              chair
+            </a>
+            <a
+              href="#"
+              class="hover:bg-gray-300 tranistion duration-500 tra px-10 py-3"
+            >
+              <i class="fa-solid fa-tv text-base mr-2"></i>
+              television
+            </a>
+            <a
+              href="#"
+              class="hover:bg-gray-300 tranistion duration-500 tra px-10 py-3"
+            >
+              <i class="fa-solid fa-sink text-base mr-2"></i>
+              sink
+            </a>
+            <a
+              href="#"
+              class="hover:bg-gray-300 tranistion duration-500 tra px-10 py-3"
+            >
+              <i class="fa-solid fa-kitchen-set text-base mr-2"></i>
+              kitchen set
+            </a>
+          </nav>
+        </aside>
+        <!-- /#categoryListContainer  -->
         <aside
           id="navBar"
-          class="basis-4/5 flex flex-row justify-between items-center pr-2"
+          class="flex flex-row flex-grow justify-between items-center pr-2"
         >
           <nav id="navLeft" class="flex flex-row space-x-7">
             <a href="./">home</a>

@@ -9,7 +9,7 @@
   </head>
 
   <body>
-    <!-- header part  -->
+    <!-- ########## header part ##########  -->
     <header
       id="header"
       class="container m-auto md:h-20 xs:h-auto p-4 flex md:flex-row xs:flex-col xs:space-y-5 md:space-y-0 md:items-center xs:items-center md:justify-between xs:justify-center"
@@ -49,13 +49,15 @@
         id="headerIcons"
         class="flex h-full items-center content-between space-x-10 md:space-x-3 xl:space-x-10 2xl:space-x-14"
       >
-        <a href="./" class="flex flex-col items-center content-between">
+        <a href="./" class="group flex flex-col items-center content-between">
           <span
             class="text-gray-600 capitalize text-sm font-semibold relative w-7 h-7"
           >
-            <i class="fa-solid fa-cart-shopping text-xl text-gray-500"></i>
+            <i
+              class="fa-solid fa-cart-shopping text-xl text-gray-500 group-hover:text-gray-800 transition duration-500"
+            ></i>
             <em
-              class="not-italic absolute -top-1 -right-3 w-5 h-5 bg-brandColor rounded-full flex items-center justify-center text-white"
+              class="not-italic absolute -top-2 -right-3 w-5 h-5 bg-brandColor rounded-full flex items-center justify-center text-white"
             >
               1
             </em>
@@ -64,13 +66,15 @@
             Cart
           </span>
         </a>
-        <a href="./" class="flex flex-col items-center content-between">
+        <a href="./" class="group flex flex-col items-center content-between">
           <span
             class="text-gray-600 capitalize text-sm font-semibold relative w-7 h-7"
           >
-            <i class="fa-solid fa-heart text-xl text-gray-500"></i>
+            <i
+              class="fa-solid fa-heart text-xl text-gray-500 group-hover:text-gray-800 transition duration-500"
+            ></i>
             <em
-              class="not-italic absolute -top-1 -right-3 w-5 h-5 bg-brandColor rounded-full flex items-center justify-center text-white"
+              class="not-italic absolute -top-2 -right-3 w-5 h-5 bg-brandColor rounded-full flex items-center justify-center text-white"
             >
               5
             </em>
@@ -80,8 +84,14 @@
           </span>
         </a>
 
-        <a href="./" class="relative flex flex-col items-center content-center">
-          <i class="fa-solid fa-user text-xl text-gray-500" title="Account"></i>
+        <a
+          href="./"
+          class="group relative flex flex-col items-center content-center"
+        >
+          <i
+            class="fa-solid fa-user text-xl text-gray-500 group-hover:text-gray-800 transition duration-500"
+            title="Account"
+          ></i>
           <span class="text-gray-600 capitalize text-sm font-semibold"
             >account</span
           >
@@ -89,9 +99,11 @@
       </nav>
       <!-- /#headerIcons -->
     </header>
-    <!-- end: header part  -->
+    <!-- ########## end: header part  ########## -->
     <!-- navbar part  -->
-    <nav id="navbar" class="bg-gray-700 h-12"></nav>
+    <section id="navbar" class="bg-gray-700 h-12">
+      <nav class="container m-auto h-full bg-pink-300">navbar</nav>
+    </section>
     <!-- end: navbar part  -->
   </body>
 </html>

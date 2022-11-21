@@ -196,15 +196,33 @@
     </section>
     <!--### end: navbar  ###-->
     <!--### banner  ###-->
-
-    <section id="banner" class="h-112 w-full relative">
+    <section
+      id="banner"
+      class="h-112 w-full relative flex items-center content-center flex-row-reverse capitalize font-poppins"
+    >
       <img
         src="./dist/images/banner-2.jpg"
         alt="banner"
-        class="absolute w-full h-full object-cover"
+        class="absolute w-full h-full object-cover z-10"
       />
+      <main id="bannerContent" class="z-50 text-gray-600 w-2/5 p-5">
+        <h1 id="bannerTitle" class="text-5xl font-bold leading-none mb-4">
+          best collection for home decoration
+        </h1>
+        <p id="bannerText" class="text-sm mb-8">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, veniam
+          deleniti ullam voluptatibus debitis eligendi totam est veritatis
+          vitae.
+        </p>
+        <a
+          href="#"
+          class="bg-brandColor hover:bg-gray-500 ring-1 ring-gray-500 ring-offset-2 px-8 py-3 text-white rounded-lg transition-all duration-300"
+        >
+          buy now
+        </a>
+      </main>
+      <!-- /#bannerContent -->
     </section>
-
     <!--### end: banner  ###-->
   </body>
 </html>

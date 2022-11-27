@@ -11543,6 +11543,11 @@ video {
     background-color: rgb(241 245 249 / var(--tw-bg-opacity));
   }
 
+  .xs\:px-2{
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
   .xs\:text-2xl{
     font-size: 1.5rem;
     line-height: 2rem;
